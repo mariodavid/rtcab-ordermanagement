@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="com.roadtocubaandbeyond.ordermanagement.web.lineitem.LineItemEdit"
+        datasource="lineItemDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.roadtocubaandbeyond.ordermanagement.web.lineitem">
+    <dsContext>
+        <datasource id="lineItemDs"
+                    class="com.roadtocubaandbeyond.ordermanagement.entity.LineItem"
+                    view="lineItem-view"/>
+        <collectionDatasource id="productsDs"
+                              class="com.roadtocubaandbeyond.ordermanagement.entity.Product"
+                              view="_minimal">
+            <query>
+                <![CDATA[select e from rtcabo$Product e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout expand="windowActions"
+            spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="lineItemDs">
+            <column width="250px">
+                <field optionsDatasource="productsDs"
+                       property="product"/>
+                <field property="price"/>
+                <field property="quantity"/>
+            </column>
+        </fieldGroup>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+    </layout>
+</window>

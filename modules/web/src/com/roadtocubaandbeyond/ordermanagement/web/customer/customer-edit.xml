@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="com.roadtocubaandbeyond.ordermanagement.web.customer.CustomerEdit"
+        datasource="customerDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.roadtocubaandbeyond.ordermanagement.web.customer">
+    <dsContext>
+        <datasource id="customerDs"
+                    class="com.roadtocubaandbeyond.ordermanagement.entity.Customer"
+                    view="customer-view">
+            <collectionDatasource id="addressesDs"
+                                  property="addresses"/>
+            <collectionDatasource id="ordersDs"
+                                  property="orders"/>
+        </datasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="windowActions"
+            spacing="true">
+        <tabSheet>
+            <tab id="customerDataTab" caption="msg://customerData" expand="fieldGroup" spacing="true" margin="true">
+                <fieldGroup id="fieldGroup"
+                            datasource="customerDs">
+                    <column width="250px">
+                        <field property="name"/>
+                        <field property="firstName"/>
+                        <field property="birthday"/>
+                    </column>
+                </fieldGroup>
+            </tab>
+
+            <tab id="ordersTab" expand="ordersTable" caption="msg://orders" spacing="true" margin="true">
+
+                    <table id="ordersTable"
+                           height="100%"
+                           width="100%">
+                        <actions>
+                            <action id="create"/>
+                            <action id="edit"/>
+                            <action id="remove"/>
+                        </actions>
+                        <columns>
+                            <column id="orderId"/>
+                            <column id="orderDate"/>
+                            <column id="deliveryDate"/>
+                        </columns>
+                        <rows datasource="ordersDs"/>
+                        <buttonsPanel>
+                            <button action="ordersTable.create"/>
+                            <button action="ordersTable.edit"/>
+                            <button action="ordersTable.remove"/>
+                        </buttonsPanel>
+                    </table>
+            </tab>
+
+            <tab id="addressesTab" expand="addressesTable" caption="msg://addresses" spacing="true" margin="true">
+                <table id="addressesTable"
+                       height="100%"
+                       width="100%">
+                    <actions>
+                        <action id="create"
+                                openType="DIALOG"/>
+                        <action id="edit"
+                                openType="DIALOG"/>
+                        <action id="remove"/>
+                    </actions>
+                    <columns>
+                        <column id="street"/>
+                        <column id="postCode"/>
+                        <column id="city"/>
+                    </columns>
+                    <rows datasource="addressesDs"/>
+                    <buttonsPanel>
+                        <button action="addressesTable.create"/>
+                        <button action="addressesTable.edit"/>
+                        <button action="addressesTable.remove"/>
+                    </buttonsPanel>
+                </table>
+            </tab>
+        </tabSheet>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+    </layout>
+</window>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <include file="com/roadtocubaandbeyond/ordermanagement/screens.xml"/>
+    <screen id="rtcabo$Customer.browse"
+            template="com/roadtocubaandbeyond/ordermanagement/web/customer/customer-browse.xml"/>
+    <screen id="rtcabo$Customer.edit"
+            template="com/roadtocubaandbeyond/ordermanagement/web/customer/customer-edit.xml"/>
+    <screen id="rtcabo$Address.edit"
+            template="com/roadtocubaandbeyond/ordermanagement/web/address/address-edit.xml"/>
+    <screen id="rtcabo$Product.browse"
+            template="com/roadtocubaandbeyond/ordermanagement/web/product/product-browse.xml"/>
+    <screen id="rtcabo$Product.edit"
+            template="com/roadtocubaandbeyond/ordermanagement/web/product/product-edit.xml"/>
+    <screen id="rtcabo$LineItem.edit"
+            template="com/roadtocubaandbeyond/ordermanagement/web/lineitem/line-item-edit.xml"/>
+    <screen id="rtcabo$Order.browse"
+            template="com/roadtocubaandbeyond/ordermanagement/web/order/order-browse.xml"/>
+    <screen id="rtcabo$Order.edit"
+            template="com/roadtocubaandbeyond/ordermanagement/web/order/order-edit.xml"/>
+    <screen id="rtcabo$Document.edit"
+            template="com/roadtocubaandbeyond/ordermanagement/web/document/document-edit.xml"/>
+</screen-config>

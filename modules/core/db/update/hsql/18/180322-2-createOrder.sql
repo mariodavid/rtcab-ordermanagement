@@ -1,0 +1,2 @@
+alter table RTCABO_ORDER add constraint FK_RTCABO_ORDER_CUSTOMER foreign key (CUSTOMER_ID) references RTCABO_CUSTOMER(ID);
+create index IDX_RTCABO_ORDER_CUSTOMER on RTCABO_ORDER (CUSTOMER_ID);

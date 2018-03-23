@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <menu id="application-rtcabo"
+          insertBefore="administration">
+        <item screen="rtcabo$Customer.browse"/>
+        <item screen="rtcabo$Product.browse"/>
+        <item screen="rtcabo$Order.browse"/>
+    </menu>
+</menu-config>

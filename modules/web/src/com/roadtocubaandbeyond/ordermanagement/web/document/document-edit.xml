@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="com.roadtocubaandbeyond.ordermanagement.web.document.DocumentEdit"
+        datasource="documentDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.roadtocubaandbeyond.ordermanagement.web.document">
+    <dsContext>
+        <datasource id="documentDs"
+                    class="com.roadtocubaandbeyond.ordermanagement.entity.Document"
+                    view="document-view"/>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="windowActions"
+            spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="documentDs">
+            <column width="250px">
+                <field property="name"/>
+                <field property="file"/>
+                <field property="type"/>
+            </column>
+        </fieldGroup>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+    </layout>
+</window>

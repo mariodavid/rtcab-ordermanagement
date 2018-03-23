@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="com.roadtocubaandbeyond.ordermanagement.web.order.OrderEdit"
+        datasource="orderDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.roadtocubaandbeyond.ordermanagement.web.order">
+    <dsContext>
+        <datasource id="orderDs"
+                    class="com.roadtocubaandbeyond.ordermanagement.entity.Order"
+                    view="order-view">
+            <collectionDatasource id="lineItemsDs"
+                                  property="lineItems"/>
+            <collectionDatasource id="documentsDs"
+                                  property="documents"/>
+        </datasource>
+        <collectionDatasource id="customersDs"
+                              class="com.roadtocubaandbeyond.ordermanagement.entity.Customer"
+                              view="_minimal">
+            <query>
+                <![CDATA[select e from rtcabo$Customer e]]>
+            </query>
+        </collectionDatasource>
+        <collectionDatasource id="logDs"
+                              class="com.haulmont.cuba.security.entity.EntityLogItem"
+                              view="logView">
+            <query>
+                <![CDATA[select i from sec$EntityLog i
+                where i.entityRef.entityId = :ds$orderDs order by i.eventTs desc]]>
+            </query>
+            <collectionDatasource id="logAttrDs"
+                                  property="attributes"/>
+        </collectionDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="tabSheet"
+            spacing="true">
+        <tabSheet id="tabSheet">
+            <tab id="dataTab"
+                 caption="msg://dataTab"
+                 expand="lineItemsBox"
+                 margin="true"
+                 spacing="true">
+                <fieldGroup id="fieldGroup"
+                            datasource="orderDs">
+                    <column width="250px">
+                        <field optionsDatasource="customersDs"
+                               property="customer"/>
+                        <field editable="false"
+                               property="orderId"/>
+                        <field property="orderDate"/>
+                        <field property="deliveryDate"/>
+                    </column>
+                </fieldGroup>
+                <groupBox id="lineItemsBox"
+                          caption="msg://com.roadtocubaandbeyond.ordermanagement.entity/Order.lineItems">
+                    <table id="lineItemsTable"
+                           height="100%"
+                           width="100%">
+                        <actions>
+                            <action id="create"
+                                    openType="DIALOG"/>
+                            <action id="edit"
+                                    openType="DIALOG"/>
+                            <action id="remove"/>
+                        </actions>
+                        <columns>
+                            <column id="product"/>
+                        </columns>
+                        <rows datasource="lineItemsDs"/>
+                        <buttonsPanel>
+                            <button action="lineItemsTable.create"/>
+                            <button action="lineItemsTable.edit"/>
+                            <button action="lineItemsTable.remove"/>
+                        </buttonsPanel>
+                    </table>
+                </groupBox>
+            </tab>
+            <tab id="documentsTab" caption="msg://documents" expand="documentsTable" margin="true" spacing="true">
+                <table id="documentsTable"
+                       height="100%"
+                       width="100%">
+                    <actions>
+                        <action id="create"/>
+                        <action id="edit"/>
+                        <action id="remove"/>
+                    </actions>
+                    <columns>
+                        <column id="name"/>
+                        <column id="type"/>
+                    </columns>
+                    <rows datasource="documentsDs"/>
+                    <buttonsPanel>
+                        <button action="documentsTable.create"/>
+                        <button action="documentsTable.edit"/>
+                        <button action="documentsTable.remove"/>
+                    </buttonsPanel>
+                </table>
+            </tab>
+
+            <tab id="changesTab"
+                 caption="Changes"
+                 expand="split"
+                 margin="true"
+                 spacing="true">
+                <split id="split"
+                       height="100%"
+                       orientation="vertical"
+                       width="100%">
+                    <table id="logTable"
+                           height="100%"
+                           width="100%">
+                        <columns>
+                            <column id="eventTs"/>
+                            <column id="user.login"/>
+                            <column id="type"/>
+                        </columns>
+                        <rows datasource="logDs"/>
+                    </table>
+                    <table id="logAttrTable"
+                           height="100%"
+                           width="100%">
+                        <columns>
+                            <column id="name"/>
+                            <column id="oldValue"/>
+                            <column id="value"/>
+                        </columns>
+                        <rows datasource="logAttrDs"/>
+                    </table>
+                </split>
+            </tab>
+        </tabSheet>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+    </layout>
+</window>

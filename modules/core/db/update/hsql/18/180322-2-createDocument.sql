@@ -1,0 +1,4 @@
+alter table RTCABO_DOCUMENT add constraint FK_RTCABO_DOCUMENT_FILE foreign key (FILE_ID) references SYS_FILE(ID);
+alter table RTCABO_DOCUMENT add constraint FK_RTCABO_DOCUMENT_ORDER foreign key (ORDER_ID) references RTCABO_ORDER(ID);
+create index IDX_RTCABO_DOCUMENT_FILE on RTCABO_DOCUMENT (FILE_ID);
+create index IDX_RTCABO_DOCUMENT_ORDER on RTCABO_DOCUMENT (ORDER_ID);

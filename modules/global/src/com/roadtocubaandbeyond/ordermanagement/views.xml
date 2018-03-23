@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<views xmlns="http://schemas.haulmont.com/cuba/view.xsd">
+    <view class="com.roadtocubaandbeyond.ordermanagement.entity.Customer"
+          extends="_local"
+          name="customer-view">
+        <property name="addresses"
+                  view="_minimal"/>
+        <property name="orders"
+                  view="order-view"/>
+    </view>
+    <view class="com.roadtocubaandbeyond.ordermanagement.entity.LineItem"
+          extends="_local"
+          name="lineItem-view">
+        <property name="product"
+                  view="_minimal"/>
+    </view>
+    <view class="com.roadtocubaandbeyond.ordermanagement.entity.Order"
+          extends="_local"
+          name="order-view">
+        <property name="customer"
+                  view="_minimal"/>
+        <property name="lineItems"
+                  view="lineItem-view"/>
+        <property name="documents"
+                  view="document-view"/>
+    </view>
+    <view class="com.roadtocubaandbeyond.ordermanagement.entity.Document"
+          extends="_local"
+          name="document-view">
+        <property name="file"
+                  view="_minimal"/>
+    </view>
+</views>
