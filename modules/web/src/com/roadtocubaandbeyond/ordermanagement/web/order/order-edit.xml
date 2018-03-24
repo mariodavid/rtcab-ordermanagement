@@ -66,7 +66,9 @@
                             <action id="remove"/>
                         </actions>
                         <columns>
+                            <column id="quantity"/>
                             <column id="product"/>
+                            <column id="price"/>
                         </columns>
                         <rows datasource="lineItemsDs"/>
                         <buttonsPanel>
@@ -85,6 +87,7 @@
                         <action id="create"/>
                         <action id="edit"/>
                         <action id="remove"/>
+                        <action id="generateInvoice" invoke="generateInvoice" caption="msg://generateInvoice"/>
                     </actions>
                     <columns>
                         <column id="name"/>
@@ -95,6 +98,7 @@
                         <button action="documentsTable.create"/>
                         <button action="documentsTable.edit"/>
                         <button action="documentsTable.remove"/>
+                        <button action="documentsTable.generateInvoice"/>
                     </buttonsPanel>
                 </table>
             </tab>
