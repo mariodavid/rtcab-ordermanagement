@@ -18,7 +18,7 @@
     <!--Application components-->
     <context-param>
         <param-name>appComponents</param-name>
-        <param-value>com.haulmont.cuba com.haulmont.reports</param-value>
+        <param-value>com.haulmont.cuba com.haulmont.reports com.haulmont.translation.german</param-value>
     </context-param>
     <listener>
         <listener-class>com.vaadin.server.communication.JSR356WebsocketInitializer</listener-class>
