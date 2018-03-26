@@ -1,0 +1,4 @@
+[Customer]<>-->[Order]
+[Order]-[note: Aggregate Root{bg:cornsilk}]
+[Order]<>-->[LineItem]
+[LineItem]-->[Product]
