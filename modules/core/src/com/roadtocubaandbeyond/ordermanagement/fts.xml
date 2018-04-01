@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fts-config xmlns="http://schemas.haulmont.com/cuba/fts.xsd">
+    <entities>
+        <entity class="com.roadtocubaandbeyond.ordermanagement.entity.Customer">
+            <include re=".*"/>
+        </entity>
+        <entity class="com.roadtocubaandbeyond.ordermanagement.entity.Address">
+            <include re=".*"/>
+        </entity>
+        <entity class="com.roadtocubaandbeyond.ordermanagement.entity.Product">
+            <include re=".*"/>
+        </entity>
+        <entity class="com.roadtocubaandbeyond.ordermanagement.entity.LineItem">
+            <include re=".*"/>
+        </entity>
+        <entity class="com.roadtocubaandbeyond.ordermanagement.entity.Order">
+            <include re=".*"/>
+        </entity>
+        <entity class="com.roadtocubaandbeyond.ordermanagement.entity.Document">
+            <include re=".*"/>
+        </entity>
+    </entities>
+</fts-config>
