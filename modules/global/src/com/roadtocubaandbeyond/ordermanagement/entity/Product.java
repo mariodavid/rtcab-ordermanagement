@@ -6,6 +6,11 @@ import javax.persistence.Column;
 import javax.validation.constraints.NotNull;
 import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.chile.core.annotations.NamePattern;
+import com.haulmont.cuba.core.entity.annotation.Lookup;
+import com.haulmont.cuba.core.entity.annotation.LookupType;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @NamePattern("%s|name")
 @Table(name = "RTCABO_PRODUCT")
@@ -19,6 +24,20 @@ public class Product extends StandardEntity {
 
     @Column(name = "CODE")
     protected String code;
+
+    @Lookup(type = LookupType.DROPDOWN, actions = {"lookup", "clear"})
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "CATEGORY_ID")
+    protected ProductCategory category;
+
+    public void setCategory(ProductCategory category) {
+        this.category = category;
+    }
+
+    public ProductCategory getCategory() {
+        return category;
+    }
+
 
     public void setName(String name) {
         this.name = name;

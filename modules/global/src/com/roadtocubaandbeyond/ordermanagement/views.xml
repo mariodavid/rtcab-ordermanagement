@@ -30,4 +30,10 @@
         <property name="file"
                   view="_minimal"/>
     </view>
+    <view class="com.roadtocubaandbeyond.ordermanagement.entity.Product"
+          extends="_local"
+          name="product-view">
+        <property name="category"
+                  view="_minimal"/>
+    </view>
 </views>

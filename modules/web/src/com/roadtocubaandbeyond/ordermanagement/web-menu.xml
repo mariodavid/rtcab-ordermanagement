@@ -5,5 +5,6 @@
         <item screen="rtcabo$Customer.browse"/>
         <item screen="rtcabo$Product.browse"/>
         <item screen="rtcabo$Order.browse"/>
+        <item screen="rtcabo$ProductCategory.browse"/>
     </menu>
 </menu-config>

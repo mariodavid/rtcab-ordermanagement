@@ -9,5 +9,6 @@
         <class>com.roadtocubaandbeyond.ordermanagement.entity.LineItem</class>
         <class>com.roadtocubaandbeyond.ordermanagement.entity.Order</class>
         <class>com.roadtocubaandbeyond.ordermanagement.entity.Document</class>
+        <class>com.roadtocubaandbeyond.ordermanagement.entity.ProductCategory</class>
     </persistence-unit>
 </persistence>

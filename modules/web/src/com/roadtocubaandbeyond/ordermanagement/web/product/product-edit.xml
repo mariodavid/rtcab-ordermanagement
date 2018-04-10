@@ -8,7 +8,10 @@
     <dsContext>
         <datasource id="productDs"
                     class="com.roadtocubaandbeyond.ordermanagement.entity.Product"
-                    view="_local"/>
+                    view="product-view"/>
+        <collectionDatasource id="categoriesDs"
+                              class="com.roadtocubaandbeyond.ordermanagement.entity.ProductCategory"
+                              view="_minimal"/>
     </dsContext>
     <dialogMode height="600"
                 width="800"/>
@@ -19,6 +22,8 @@
             <column width="250px">
                 <field property="name"/>
                 <field property="code"/>
+                <field optionsDatasource="categoriesDs"
+                       property="category"/>
             </column>
         </fieldGroup>
         <frame id="windowActions"

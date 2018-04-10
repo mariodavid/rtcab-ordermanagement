@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://browseCaption"
-        class="com.roadtocubaandbeyond.ordermanagement.web.product.ProductBrowse"
-        focusComponent="productsTable"
-        lookupComponent="productsTable"
-        messagesPack="com.roadtocubaandbeyond.ordermanagement.web.product">
+        class="com.roadtocubaandbeyond.ordermanagement.web.productcategory.ProductCategoryBrowse"
+        focusComponent="productCategoriesTable"
+        lookupComponent="productCategoriesTable"
+        messagesPack="com.roadtocubaandbeyond.ordermanagement.web.productcategory">
     <dsContext>
-        <groupDatasource id="productsDs"
-                         class="com.roadtocubaandbeyond.ordermanagement.entity.Product"
-                         view="product-view">
+        <groupDatasource id="productCategoriesDs"
+                         class="com.roadtocubaandbeyond.ordermanagement.entity.ProductCategory"
+                         view="_local">
             <query>
-                <![CDATA[select e from rtcabo$Product e]]>
+                <![CDATA[select e from rtcabo$ProductCategory e]]>
             </query>
         </groupDatasource>
     </dsContext>
     <dialogMode height="600"
                 width="800"/>
-    <layout expand="productsTable"
+    <layout expand="productCategoriesTable"
             spacing="true">
         <filter id="filter"
-                applyTo="productsTable"
-                datasource="productsDs">
+                applyTo="productCategoriesTable"
+                datasource="productCategoriesDs">
             <properties include=".*"/>
         </filter>
-        <groupTable id="productsTable"
+        <groupTable id="productCategoriesTable"
                     width="100%">
             <actions>
                 <action id="create"/>
@@ -33,18 +33,17 @@
             <columns>
                 <column id="name"/>
                 <column id="code"/>
-                <column id="category"/>
             </columns>
-            <rows datasource="productsDs"/>
+            <rows datasource="productCategoriesDs"/>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"
                           alwaysVisible="true">
                 <button id="createBtn"
-                        action="productsTable.create"/>
+                        action="productCategoriesTable.create"/>
                 <button id="editBtn"
-                        action="productsTable.edit"/>
+                        action="productCategoriesTable.edit"/>
                 <button id="removeBtn"
-                        action="productsTable.remove"/>
+                        action="productCategoriesTable.remove"/>
             </buttonsPanel>
         </groupTable>
     </layout>

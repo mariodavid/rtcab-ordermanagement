@@ -19,4 +19,8 @@
             template="com/roadtocubaandbeyond/ordermanagement/web/order/order-edit.xml"/>
     <screen id="rtcabo$Document.edit"
             template="com/roadtocubaandbeyond/ordermanagement/web/document/document-edit.xml"/>
+    <screen id="rtcabo$ProductCategory.browse"
+            template="com/roadtocubaandbeyond/ordermanagement/web/productcategory/product-category-browse.xml"/>
+    <screen id="rtcabo$ProductCategory.edit"
+            template="com/roadtocubaandbeyond/ordermanagement/web/productcategory/product-category-edit.xml"/>
 </screen-config>
