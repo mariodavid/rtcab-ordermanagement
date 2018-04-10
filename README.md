@@ -16,6 +16,6 @@ All videos in detail:
 * [02 - ordermanagement - auto generate invoice and save to order](https://youtu.be/sg2CbGUQahw)
 * [03 - ordermanagement - internationalization of the application (i18n)](https://youtu.be/wodRfEv1h-Y)
 * [04 - ordermanagement - search data via full text search](https://youtu.be/OoZCoXwJfwU)
-
+* [05 - ordermanagement - hide customer selection in order screen](https://youtu.be/OxUKyd_E58k)
 
 More detailed information on certain topics of the platform can be found here: [road-to-cuba-and-beyond.com](https://www.road-to-cuba-and-beyond.com)
