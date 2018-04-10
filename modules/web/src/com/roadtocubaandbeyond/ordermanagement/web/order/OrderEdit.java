@@ -3,6 +3,7 @@ package com.roadtocubaandbeyond.ordermanagement.web.order;
 import com.haulmont.cuba.core.entity.FileDescriptor;
 import com.haulmont.cuba.core.global.Metadata;
 import com.haulmont.cuba.gui.components.AbstractEditor;
+import com.haulmont.cuba.gui.components.LookupPickerField;
 import com.haulmont.cuba.gui.data.CollectionDatasource;
 import com.haulmont.reports.app.service.ReportService;
 import com.haulmont.reports.entity.Report;
@@ -12,6 +13,7 @@ import com.roadtocubaandbeyond.ordermanagement.entity.Order;
 import com.roadtocubaandbeyond.ordermanagement.service.ReportLoadService;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -31,7 +33,15 @@ public class OrderEdit extends AbstractEditor<Order> {
     @Inject
     protected Metadata metadata;
 
+    @Named("fieldGroup.customer")
+    protected LookupPickerField customerField;
 
+    @Override
+    protected void initNewItem(Order item) {
+        if (item.getCustomer() != null) {
+            customerField.setVisible(false);
+        }
+    }
 
     @Override
     protected boolean preCommit() {

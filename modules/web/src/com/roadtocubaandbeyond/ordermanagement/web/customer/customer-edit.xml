@@ -12,7 +12,10 @@
             <collectionDatasource id="addressesDs"
                                   property="addresses"/>
             <collectionDatasource id="ordersDs"
-                                  property="orders"/>
+                                  property="orders">
+                <collectionDatasource id="lineItemsDs" property="lineItems" />
+                <collectionDatasource id="documentsDs" property="documents" />
+            </collectionDatasource>
         </datasource>
     </dsContext>
     <dialogMode height="600"
