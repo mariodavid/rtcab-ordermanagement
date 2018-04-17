@@ -18,6 +18,10 @@ buildscript {
                 password(rootProject.hasProperty('premiumRepoPass') ? rootProject['premiumRepoPass'] : System.getenv('CUBA_PREMIUM_PASSWORD'))
             }
         }
+
+        maven {
+            url  "https://dl.bintray.com/balvi/cuba-components"
+        }
         
     }
     dependencies {
@@ -55,8 +59,9 @@ cuba {
 dependencies {
     appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
     appComponent("com.haulmont.reports:reports-global:$cubaVersion")
-    appComponent("com.haulmont.translation.german:translation_DE-global:6.3.5.2")
     appComponent("com.haulmont.fts:fts-global:$cubaVersion")
+
+    appComponent("de.balvi.cuba.translationde:translation-de-global:1.1.0")
 
 }
 
