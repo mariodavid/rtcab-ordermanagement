@@ -17,5 +17,6 @@ All videos in detail:
 * [03 - ordermanagement - internationalization of the application (i18n)](https://youtu.be/wodRfEv1h-Y)
 * [04 - ordermanagement - search data via full text search](https://youtu.be/OoZCoXwJfwU)
 * [05 - ordermanagement - hide customer selection in order screen](https://youtu.be/OxUKyd_E58k)
+* [05 - ordermanagement - role with subset of features](https://youtu.be/bBFhHkz0BCk)
 
 More detailed information on certain topics of the platform can be found here: [road-to-cuba-and-beyond.com](https://www.road-to-cuba-and-beyond.com)
