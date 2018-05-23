@@ -20,3 +20,16 @@ All videos in detail:
 * [05 - ordermanagement - role with subset of features](https://youtu.be/bBFhHkz0BCk)
 
 More detailed information on certain topics of the platform can be found here: [road-to-cuba-and-beyond.com](https://www.road-to-cuba-and-beyond.com)
+
+
+## acceptance tests
+
+This project uses acceptance test to describe the overall behavior of the system. The following test technologies are used:
+
+* [Cucumber](https://cucumber.io/)
+* [Selenium](https://www.seleniumhq.org/)
+* [masquerade](https://github.com/cuba-platform/masquerade)
+
+```
+./gradlew testUi -Dselenide.browser=firefox -Dwebdriver.gecko.driver=/usr/local/bin/geckodriver 
+```

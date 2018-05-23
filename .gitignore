@@ -8,3 +8,6 @@ deploy/*
 modules/*/build/*
 out
 test-run
+
+.DS_Store
+modules/*/test-home/*

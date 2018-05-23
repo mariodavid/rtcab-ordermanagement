@@ -8,6 +8,7 @@ create table RTCABO_CUSTOMER (
     UPDATED_BY varchar(50),
     DELETE_TS timestamp,
     DELETED_BY varchar(50),
+    TENANT_ID varchar(36) not null,
     --
     NAME varchar(255) not null,
     FIRST_NAME varchar(255),
@@ -127,3 +128,20 @@ create table RTCABO_PRODUCT_CATEGORY (
     primary key (ID)
 )^
 -- end RTCABO_PRODUCT_CATEGORY
+-- begin RTCABO_TENANT
+create table RTCABO_TENANT (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    NAME varchar(255) not null,
+    CODE varchar(255) not null,
+    --
+    primary key (ID)
+)^
+-- end RTCABO_TENANT

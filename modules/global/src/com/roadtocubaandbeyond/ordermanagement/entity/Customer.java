@@ -18,7 +18,7 @@ import javax.persistence.OneToMany;
 @NamePattern("%s|name")
 @Table(name = "RTCABO_CUSTOMER")
 @Entity(name = "rtcabo$Customer")
-public class Customer extends StandardEntity {
+public class Customer extends StandardTenantEntity {
     private static final long serialVersionUID = 5364214967783482854L;
 
     @NotNull

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="com.roadtocubaandbeyond.ordermanagement.web.tenant.TenantBrowse"
+        focusComponent="tenantsTable"
+        lookupComponent="tenantsTable"
+        messagesPack="com.roadtocubaandbeyond.ordermanagement.web.tenant">
+    <dsContext>
+        <groupDatasource id="tenantsDs"
+                         class="com.roadtocubaandbeyond.ordermanagement.entity.Tenant"
+                         view="_local">
+            <query>
+                <![CDATA[select e from rtcabo$Tenant e]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="tenantsTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="tenantsTable"
+                datasource="tenantsDs">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="tenantsTable"
+                    width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="name"/>
+                <column id="code"/>
+            </columns>
+            <rows datasource="tenantsDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="tenantsTable.create"/>
+                <button id="editBtn"
+                        action="tenantsTable.edit"/>
+                <button id="removeBtn"
+                        action="tenantsTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+    </layout>
+</window>

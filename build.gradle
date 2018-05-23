@@ -1,6 +1,6 @@
 
 buildscript {
-    ext.cubaVersion = '6.8.5'
+    ext.cubaVersion = '6.8.8'
     repositories {
         
         mavenLocal()
@@ -75,6 +75,8 @@ configure([globalModule, coreModule, guiModule, webModule]) {
 
     dependencies {
         testCompile('junit:junit:4.12')
+
+        compile group: 'com.google.guava', name: 'guava', version: '25.0-jre'
     }
 
     task sourceJar(type: Jar) {
@@ -163,6 +165,19 @@ configure(webModule) {
         provided(servletApi)
         compile(guiModule)
 
+        //the library provides an ability to access web-services, JMX and etc.
+        testCompile('com.haulmont.masquerade:masquerade-connector:1.0.6')
+
+        //the library for the UI testing
+        testCompile('com.haulmont.masquerade:masquerade-web:1.0.6')
+
+
+        testCompile 'io.cucumber:cucumber-java:3.0.0'
+        testCompile 'io.cucumber:cucumber-junit:3.0.0'
+
+        // enable logging
+        testCompile('org.slf4j:jul-to-slf4j:1.7.25')
+
     }
     
     task webArchive(type: Zip) {
@@ -200,6 +215,11 @@ configure(webModule) {
     task deploy(dependsOn: [assemble, cleanConf], type: CubaDeployment) {
         appName = "${modulePrefix}"
         appJars(modulePrefix + '-global', modulePrefix + '-gui', modulePrefix + '-web')
+    }
+
+    task testUi(type: Test, dependsOn: testClasses) {
+        systemProperty 'selenide.browser', System.getProperty('selenide.browser')
+        systemProperty 'webdriver.gecko.driver', System.getProperty('webdriver.gecko.driver')
     }
 }
 

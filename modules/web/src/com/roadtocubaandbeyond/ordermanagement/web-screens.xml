@@ -23,4 +23,8 @@
             template="com/roadtocubaandbeyond/ordermanagement/web/productcategory/product-category-browse.xml"/>
     <screen id="rtcabo$ProductCategory.edit"
             template="com/roadtocubaandbeyond/ordermanagement/web/productcategory/product-category-edit.xml"/>
+    <screen id="rtcabo$Tenant.browse"
+            template="com/roadtocubaandbeyond/ordermanagement/web/tenant/tenant-browse.xml"/>
+    <screen id="rtcabo$Tenant.edit"
+            template="com/roadtocubaandbeyond/ordermanagement/web/tenant/tenant-edit.xml"/>
 </screen-config>
