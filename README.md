@@ -5,7 +5,7 @@ It is a showcase application that shows the built-in features of the platform it
 
 The domain model of the application looks like this:
 
-![Screenshot Groovy-Console](https://github.com/mariodavid/rtcab-ordermanagement/blob/master/img/domain-model.png)
+![Domain model](https://github.com/mariodavid/rtcab-ordermanagement/blob/master/img/domain-model.png)
 
 The application will be developed with corresponding screencasts, that can be found on the YouTube playlist:
 
