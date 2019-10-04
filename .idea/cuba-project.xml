@@ -31,17 +31,17 @@
             <DependencyModelState>
               <option name="group" value="com.haulmont.cuba" />
               <option name="name" value="cuba-global" />
-              <option name="version" value="7.0.11" />
+              <option name="version" value="7.1.1" />
             </DependencyModelState>
             <DependencyModelState>
               <option name="group" value="com.haulmont.reports" />
               <option name="name" value="reports-global" />
-              <option name="version" value="7.0.11" />
+              <option name="version" value="7.1.1" />
             </DependencyModelState>
             <DependencyModelState>
               <option name="group" value="com.haulmont.fts" />
               <option name="name" value="fts-global" />
-              <option name="version" value="7.0.11" />
+              <option name="version" value="7.1.1" />
             </DependencyModelState>
             <DependencyModelState>
               <option name="group" value="de.balvi.cuba.translationde" />
@@ -63,8 +63,8 @@
     </option>
     <option name="dbArtifacts">
       <map>
-        <entry key="com.haulmont.cuba" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-core/7.0.11/5b7c2977640b55cc7d03df368738141ff49b1ce6/cuba-core-7.0.11-db.zip" />
-        <entry key="com.haulmont.reports" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.reports/reports-core/7.0.11/705b65a8b1ddf409576d15dc0bdd9552c60a4cd0/reports-core-7.0.11-db.zip" />
+        <entry key="com.haulmont.cuba" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-core/7.1.1/c794239ddfcb259598676480d34d040ae36f60de/cuba-core-7.1.1-db.zip" />
+        <entry key="com.haulmont.reports" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.reports/reports-core/7.1.1/fd4c0419f45d7986a156fd03db282340708fbb5/reports-core-7.1.1-db.zip" />
         <entry key="de.balvi.cuba.translationde" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.balvi.cuba.translationde/translation-de-core/1.3.1/9d8920220ad3d573c52d51dc378e0fac51353202/translation-de-core-1.3.1-db.zip" />
       </map>
     </option>

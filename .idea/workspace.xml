@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9949d50-22fe-47d9-b951-1db0b3d4c3b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/src/com/roadtocubaandbeyond/ordermanagement/core/messages.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/src/com/roadtocubaandbeyond/ordermanagement/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/src/com/roadtocubaandbeyond/ordermanagement/spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-dispatcher-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-dispatcher-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -43,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="210">
+              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -192,8 +187,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state relative-caret-position="210">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
         </state>
       </provider>
     </entry>
