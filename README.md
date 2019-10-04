@@ -5,7 +5,7 @@ It is a showcase application that shows the built-in features of the platform it
 
 The domain model of the application looks like this:
 
-![Screenshot Groovy-Console](https://github.com/mariodavid/rtcab-ordermanagement/blob/master/img/domain-model.png)
+![Domain model](https://github.com/mariodavid/rtcab-ordermanagement/blob/master/img/domain-model.png)
 
 The application will be developed with corresponding screencasts, that can be found on the YouTube playlist:
 
@@ -17,7 +17,9 @@ All videos in detail:
 * [03 - ordermanagement - internationalization of the application (i18n)](https://youtu.be/wodRfEv1h-Y)
 * [04 - ordermanagement - search data via full text search](https://youtu.be/OoZCoXwJfwU)
 * [05 - ordermanagement - hide customer selection in order screen](https://youtu.be/OxUKyd_E58k)
-* [05 - ordermanagement - role with subset of features](https://youtu.be/bBFhHkz0BCk)
+* [06 - ordermanagement - role with subset of features](https://youtu.be/bBFhHkz0BCk)
+* [07 - ordermanagement - automatic download of translation app component](https://youtu.be/YngfAJSZ52A)
+* [08 - ordermanagement - storing tenant information with business objects](https://youtu.be/s3AFVtHOByU)
 
 More detailed information on certain topics of the platform can be found here: [road-to-cuba-and-beyond.com](https://www.road-to-cuba-and-beyond.com)
 
