@@ -31,22 +31,22 @@
             <DependencyModelState>
               <option name="group" value="com.haulmont.cuba" />
               <option name="name" value="cuba-global" />
-              <option name="version" value="6.10.13" />
+              <option name="version" value="7.0.11" />
             </DependencyModelState>
             <DependencyModelState>
               <option name="group" value="com.haulmont.reports" />
               <option name="name" value="reports-global" />
-              <option name="version" value="6.10.13" />
+              <option name="version" value="7.0.11" />
             </DependencyModelState>
             <DependencyModelState>
               <option name="group" value="com.haulmont.fts" />
               <option name="name" value="fts-global" />
-              <option name="version" value="6.10.13" />
+              <option name="version" value="7.0.11" />
             </DependencyModelState>
             <DependencyModelState>
               <option name="group" value="de.balvi.cuba.translationde" />
               <option name="name" value="translation-de-global" />
-              <option name="version" value="1.1.0" />
+              <option name="version" value="1.3.1" />
             </DependencyModelState>
           </list>
         </option>
@@ -55,7 +55,7 @@
         <option name="artifactVersion" value="0.1" />
         <option name="artifactSnapshot" value="true" />
         <option name="tomcatDir" value="$PROJECT_DIR$/deploy/tomcat" />
-        <option name="gradleVersion" value="4.3.1" />
+        <option name="gradleVersion" value="4.10.3" />
         <option name="dbmsDbType" value="hsql" />
         <option name="oracleSystemUser" value="system" />
         <option name="oracleSystemPassword" value="manager" />
@@ -63,9 +63,9 @@
     </option>
     <option name="dbArtifacts">
       <map>
-        <entry key="com.haulmont.cuba" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-core/6.10.13/49168363cd8327a1a7136dd14e6dc0dcd61e6de4/cuba-core-6.10.13-db.zip" />
-        <entry key="com.haulmont.reports" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.reports/reports-core/6.10.13/8a442fa8639b228562fcaf1fb2ad89b633c94cba/reports-core-6.10.13-db.zip" />
-        <entry key="de.balvi.cuba.translationde" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.balvi.cuba.translationde/translation-de-core/1.1.0/2526ba4c4702cc9fdeb917f36c709cb2b000c35d/translation-de-core-1.1.0-db.zip" />
+        <entry key="com.haulmont.cuba" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-core/7.0.11/5b7c2977640b55cc7d03df368738141ff49b1ce6/cuba-core-7.0.11-db.zip" />
+        <entry key="com.haulmont.reports" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.reports/reports-core/7.0.11/705b65a8b1ddf409576d15dc0bdd9552c60a4cd0/reports-core-7.0.11-db.zip" />
+        <entry key="de.balvi.cuba.translationde" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.balvi.cuba.translationde/translation-de-core/1.3.1/9d8920220ad3d573c52d51dc378e0fac51353202/translation-de-core-1.3.1-db.zip" />
       </map>
     </option>
   </component>

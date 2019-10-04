@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9949d50-22fe-47d9-b951-1db0b3d4c3b5" name="Default Changelist" comment="" />
+    <list default="true" id="b9949d50-22fe-47d9-b951-1db0b3d4c3b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/src/com/roadtocubaandbeyond/ordermanagement/core/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/src/com/roadtocubaandbeyond/ordermanagement/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/src/com/roadtocubaandbeyond/ordermanagement/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-dispatcher-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-dispatcher-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/modules/core/.gradle/" />
+    <ignored path="$PROJECT_DIR$/modules/core/build/" />
+    <ignored path="$PROJECT_DIR$/modules/global/.gradle/" />
+    <ignored path="$PROJECT_DIR$/modules/global/build/" />
+    <ignored path="$PROJECT_DIR$/modules/gui/.gradle/" />
+    <ignored path="$PROJECT_DIR$/modules/gui/build/" />
+    <ignored path="$PROJECT_DIR$/modules/web/.gradle/" />
+    <ignored path="$PROJECT_DIR$/modules/web/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,17 +38,35 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/gradle.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="560" />
@@ -38,16 +75,44 @@
     <option name="height" value="777" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="cubaProjectView" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="cubaProjectView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="rtcab-ordermanagement" type="3e3ce59f:CubaViewProjectNode" />
+              <item name="Project" type="10fe70ea:ProjectSection" />
+            </path>
+            <path>
+              <item name="rtcab-ordermanagement" type="3e3ce59f:CubaViewProjectNode" />
+              <item name="Data Model" type="9e413f45:DataModelSection" />
+            </path>
+            <path>
+              <item name="rtcab-ordermanagement" type="3e3ce59f:CubaViewProjectNode" />
+              <item name="Middleware" type="b326c000:MiddlewareSection" />
+            </path>
+            <path>
+              <item name="rtcab-ordermanagement" type="3e3ce59f:CubaViewProjectNode" />
+              <item name="Generic UI" type="75975f5b:GenericUiSection" />
+            </path>
+            <path>
+              <item name="rtcab-ordermanagement" type="3e3ce59f:CubaViewProjectNode" />
+              <item name="Runs At..." type="eaf73431:UrlsSection" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -65,7 +130,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CUBA Application.CUBA Application">
+    <configuration name="localhost:8787" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8787" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="CUBA Application" type="cubaTomcatConfiguration" factoryName="CUBA Application" jdk="#JAVA_HOME">
       <predefined_log_file enabled="true" id="catalina" />
       <method v="2">
@@ -94,15 +168,15 @@
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Build" weight="0.329927" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -114,5 +188,76 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>rtcab-ordermanagement</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
