@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CubaProjectState">
+    <option name="hasState" value="true" />
+    <option name="cubaModelState">
+      <CubaModelState>
+        <option name="repositories">
+          <list>
+            <RepositoryModelState>
+              <option name="url" value="https://repo.cuba-platform.com/content/groups/work" />
+              <option name="user" value="cuba" />
+              <option name="pass" value="3r6+CXYTcUs=" />
+              <option name="stateVersion" value="2" />
+            </RepositoryModelState>
+            <RepositoryModelState>
+              <option name="url" value="https://repo.cuba-platform.com/content/groups/premium" />
+              <option name="user" value="" />
+              <option name="pass" value="/awcoVvWe18=" />
+              <option name="stateVersion" value="2" />
+            </RepositoryModelState>
+            <RepositoryModelState>
+              <option name="url" value="https://dl.bintray.com/balvi/cuba-components" />
+              <option name="user" value="" />
+              <option name="pass" value="/awcoVvWe18=" />
+              <option name="stateVersion" value="2" />
+            </RepositoryModelState>
+          </list>
+        </option>
+        <option name="appComponents">
+          <list>
+            <DependencyModelState>
+              <option name="group" value="com.haulmont.cuba" />
+              <option name="name" value="cuba-global" />
+              <option name="version" value="6.10.13" />
+            </DependencyModelState>
+            <DependencyModelState>
+              <option name="group" value="com.haulmont.reports" />
+              <option name="name" value="reports-global" />
+              <option name="version" value="6.10.13" />
+            </DependencyModelState>
+            <DependencyModelState>
+              <option name="group" value="com.haulmont.fts" />
+              <option name="name" value="fts-global" />
+              <option name="version" value="6.10.13" />
+            </DependencyModelState>
+            <DependencyModelState>
+              <option name="group" value="de.balvi.cuba.translationde" />
+              <option name="name" value="translation-de-global" />
+              <option name="version" value="1.1.0" />
+            </DependencyModelState>
+          </list>
+        </option>
+        <option name="mavenLocal" value="true" />
+        <option name="artifactGroup" value="com.roadtocubaandbeyond.ordermanagement" />
+        <option name="artifactVersion" value="0.1" />
+        <option name="artifactSnapshot" value="true" />
+        <option name="tomcatDir" value="$PROJECT_DIR$/deploy/tomcat" />
+        <option name="gradleVersion" value="4.3.1" />
+        <option name="dbmsDbType" value="hsql" />
+        <option name="oracleSystemUser" value="system" />
+        <option name="oracleSystemPassword" value="manager" />
+      </CubaModelState>
+    </option>
+    <option name="dbArtifacts">
+      <map>
+        <entry key="com.haulmont.cuba" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-core/6.10.13/49168363cd8327a1a7136dd14e6dc0dcd61e6de4/cuba-core-6.10.13-db.zip" />
+        <entry key="com.haulmont.reports" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.reports/reports-core/6.10.13/8a442fa8639b228562fcaf1fb2ad89b633c94cba/reports-core-6.10.13-db.zip" />
+        <entry key="de.balvi.cuba.translationde" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.balvi.cuba.translationde/translation-de-core/1.1.0/2526ba4c4702cc9fdeb917f36c709cb2b000c35d/translation-de-core-1.1.0-db.zip" />
+      </map>
+    </option>
+  </component>
+</project>

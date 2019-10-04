@@ -13,7 +13,7 @@
     <!--Application components-->
     <context-param>
         <param-name>appComponents</param-name>
-        <param-value>com.haulmont.cuba com.haulmont.reports de.balvi.cuba.translationde com.haulmont.fts</param-value>
+        <param-value>com.haulmont.cuba com.haulmont.reports com.haulmont.fts de.balvi.cuba.translationde</param-value>
     </context-param>
     <listener>
         <listener-class>com.haulmont.cuba.core.sys.AppContextLoader</listener-class>
