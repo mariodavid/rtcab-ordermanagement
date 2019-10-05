@@ -22,8 +22,10 @@ public class OrderBrowse extends AbstractLookup {
 
     @Inject
     protected ScreenBuilders screenBuilders;
+
     @Inject
     protected Dialogs dialogs;
+
     @Inject
     protected DataManager dataManager;
 

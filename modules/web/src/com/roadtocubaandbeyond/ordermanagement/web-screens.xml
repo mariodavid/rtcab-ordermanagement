@@ -11,8 +11,6 @@
             template="com/roadtocubaandbeyond/ordermanagement/web/product/product-browse.xml"/>
     <screen id="rtcabo$Product.edit"
             template="com/roadtocubaandbeyond/ordermanagement/web/product/product-edit.xml"/>
-    <screen id="rtcabo$LineItem.edit"
-            template="com/roadtocubaandbeyond/ordermanagement/web/lineitem/line-item-edit.xml"/>
     <screen id="rtcabo$Order.browse"
             template="com/roadtocubaandbeyond/ordermanagement/web/order/order-browse.xml"/>
     <screen id="rtcabo$Order.edit"
