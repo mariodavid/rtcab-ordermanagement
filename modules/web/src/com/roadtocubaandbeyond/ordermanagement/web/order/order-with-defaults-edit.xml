@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://editorCaption"
+        focusComponent="form"
+        messagesPack="com.roadtocubaandbeyond.ordermanagement.web.order">
+    <data>
+        <instance id="orderDc"
+                  class="com.roadtocubaandbeyond.ordermanagement.entity.Order"
+                  view="order-view">
+            <loader/>
+            <collection id="lineItemsDc" property="lineItems"/>
+            <collection id="documentsDc" property="documents"/>
+        </instance>
+        <collection id="customersDc" class="com.roadtocubaandbeyond.ordermanagement.entity.Customer" view="_minimal">
+            <loader id="customersLc">
+                <query>
+                    <![CDATA[select e from rtcabo$Customer e]]>
+                </query>
+            </loader>
+        </collection>
+        <collection id="defaultProductsDc" class="com.roadtocubaandbeyond.ordermanagement.entity.DefaultProduct" view="defaultProduct-view">
+            <loader id="defaultProductsLc">
+                <query>
+                    <![CDATA[select e from rtcabo_DefaultProduct e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="tabSheet"
+            spacing="true">
+        <tabSheet id="tabSheet">
+            <tab id="dataTab"
+                 caption="msg://dataTab"
+                 expand="lineItemsBox"
+                 margin="true"
+                 spacing="true">
+                <form id="form" dataContainer="orderDc">
+                    <column width="250px">
+                        <lookupPickerField
+                                id="customerField"
+                                optionsContainer="customersDc"
+                                property="customer"
+                                editable="false"
+                        >
+                            <actions>
+                                <action id="lookup" type="picker_lookup"/>
+                                <action id="open" type="picker_open"/>
+                            </actions>
+                        </lookupPickerField>
+                        <lookupField id="priorityField" property="priority"/>
+                        <textField id="orderIdField" property="orderId"/>
+                        <dateField id="orderDateField" property="orderDate"/>
+                        <dateField id="deliveryDateField" property="deliveryDate"/>
+                    </column>
+                </form>
+                <groupBox id="lineItemsBox"
+                          caption="msg://com.roadtocubaandbeyond.ordermanagement.entity/Order.lineItems">
+                    <table id="lineItemsTable"
+                           dataContainer="lineItemsDc"
+                           height="100%"
+                           width="100%">
+                        <actions>
+                            <action type="create" id="create" />
+                            <action type="edit" id="edit" />
+                            <action type="remove" id="remove"/>
+                        </actions>
+                        <columns>
+                            <column id="quantity"/>
+                            <column id="product"/>
+                            <column id="price"/>
+                        </columns>
+                        <buttonsPanel>
+                            <button action="lineItemsTable.create"/>
+                            <button action="lineItemsTable.edit"/>
+                            <button action="lineItemsTable.remove"/>
+                        </buttonsPanel>
+                    </table>
+                </groupBox>
+            </tab>
+        </tabSheet>
+        <hbox id="editActions" spacing="true">
+            <button action="windowCommitAndClose"/>
+            <button action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

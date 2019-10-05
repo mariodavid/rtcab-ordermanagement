@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://browseCaption"
+        focusComponent="defaultProductsTable"
+        messagesPack="com.roadtocubaandbeyond.ordermanagement.web.defaultproduct">
+    <data readOnly="true">
+        <collection id="defaultProductsDc"
+                    class="com.roadtocubaandbeyond.ordermanagement.entity.DefaultProduct"
+                    view="defaultProduct-view">
+            <loader id="defaultProductsDl">
+                <query>
+                    <![CDATA[select e from rtcabo_DefaultProduct e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="defaultProductsTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="defaultProductsTable"
+                dataLoader="defaultProductsDl">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="defaultProductsTable"
+                    width="100%"
+                    dataContainer="defaultProductsDc">
+            <actions>
+                <action id="create" type="create"/>
+                <action id="edit" type="edit"/>
+                <action id="remove" type="remove"/>
+            </actions>
+            <columns>
+                <column id="product"/>
+                <column id="customer"/>
+                <column id="customerType"/>
+            </columns>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn" action="defaultProductsTable.create"/>
+                <button id="editBtn" action="defaultProductsTable.edit"/>
+                <button id="removeBtn" action="defaultProductsTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+        <hbox id="lookupActions" spacing="true" visible="false">
+            <button action="lookupSelectAction"/>
+            <button action="lookupCancelAction"/>
+        </hbox>
+    </layout>
+</window>

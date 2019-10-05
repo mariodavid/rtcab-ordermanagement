@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
         caption="msg://editorCaption"
-        class="com.roadtocubaandbeyond.ordermanagement.web.lineitem.LineItemEdit"
-        datasource="lineItemDs"
-        focusComponent="fieldGroup"
+        focusComponent="form"
         messagesPack="com.roadtocubaandbeyond.ordermanagement.web.lineitem">
-    <dsContext>
-        <datasource id="lineItemDs"
-                    class="com.roadtocubaandbeyond.ordermanagement.entity.LineItem"
-                    view="lineItem-view"/>
-        <collectionDatasource id="productsDs"
-                              class="com.roadtocubaandbeyond.ordermanagement.entity.Product"
-                              view="_minimal">
-            <query>
-                <![CDATA[select e from rtcabo$Product e]]>
-            </query>
-        </collectionDatasource>
-    </dsContext>
-    <layout expand="windowActions"
-            spacing="true">
-        <fieldGroup id="fieldGroup"
-                    datasource="lineItemDs">
+    <data>
+        <instance id="lineItemDc"
+                  class="com.roadtocubaandbeyond.ordermanagement.entity.LineItem"
+                  view="lineItem-view">
+            <loader/>
+        </instance>
+        <collection id="productsDc" class="com.roadtocubaandbeyond.ordermanagement.entity.Product" view="_minimal">
+            <loader id="productsLc">
+                <query>
+                    <![CDATA[select e from rtcabo$Product e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="lineItemDc">
             <column width="250px">
-                <field optionsDatasource="productsDs"
-                       property="product"/>
-                <field property="price"/>
-                <field property="quantity"/>
+                <lookupPickerField id="productField" optionsContainer="productsDc" property="product">
+                    <actions>
+                        <action id="lookup" type="picker_lookup"/>
+                    </actions>
+                </lookupPickerField>
+                <textField id="priceField" property="price"/>
+                <textField id="quantityField" property="quantity"/>
             </column>
-        </fieldGroup>
-        <frame id="windowActions"
-               screen="editWindowActions"/>
+        </form>
+        <hbox id="editActions" spacing="true">
+            <button action="windowCommitAndClose"/>
+            <button action="windowClose"/>
+        </hbox>
     </layout>
 </window>

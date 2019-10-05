@@ -12,5 +12,6 @@
         <class>com.roadtocubaandbeyond.ordermanagement.entity.ProductCategory</class>
         <class>com.roadtocubaandbeyond.ordermanagement.entity.StandardTenantEntity</class>
         <class>com.roadtocubaandbeyond.ordermanagement.entity.Tenant</class>
+        <class>com.roadtocubaandbeyond.ordermanagement.entity.DefaultProduct</class>
     </persistence-unit>
 </persistence>

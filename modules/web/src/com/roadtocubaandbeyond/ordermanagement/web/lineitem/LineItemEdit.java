@@ -1,7 +1,11 @@
 package com.roadtocubaandbeyond.ordermanagement.web.lineitem;
 
-import com.haulmont.cuba.gui.components.AbstractEditor;
+import com.haulmont.cuba.gui.screen.*;
 import com.roadtocubaandbeyond.ordermanagement.entity.LineItem;
 
-public class LineItemEdit extends AbstractEditor<LineItem> {
+@UiController("rtcabo$LineItem.edit")
+@UiDescriptor("line-item-edit.xml")
+@EditedEntityContainer("lineItemDc")
+@LoadDataBeforeShow
+public class LineItemEdit extends StandardEditor<LineItem> {
 }

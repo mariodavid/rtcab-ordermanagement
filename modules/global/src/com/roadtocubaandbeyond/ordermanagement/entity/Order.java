@@ -1,25 +1,18 @@
 package com.roadtocubaandbeyond.ordermanagement.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import com.haulmont.chile.core.annotations.Composition;
+import com.haulmont.chile.core.annotations.NamePattern;
+import com.haulmont.cuba.core.entity.StandardEntity;
+import com.haulmont.cuba.core.entity.annotation.Listeners;
 import com.haulmont.cuba.core.entity.annotation.Lookup;
 import com.haulmont.cuba.core.entity.annotation.LookupType;
 import com.haulmont.cuba.core.entity.annotation.OnDelete;
 import com.haulmont.cuba.core.global.DeletePolicy;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.List;
-import javax.persistence.Column;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.validation.constraints.NotNull;
-import com.haulmont.cuba.core.entity.StandardEntity;
-import com.haulmont.chile.core.annotations.NamePattern;
-import com.haulmont.cuba.core.entity.annotation.Listeners;
 
 @Listeners("rtcabo_OrderIdCreator")
 @NamePattern("%s|orderId")
@@ -33,6 +26,9 @@ public class Order extends StandardEntity {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "CUSTOMER_ID")
     protected Customer customer;
+
+    @Column(name = "PRIORITY")
+    protected String priority;
 
     @Column(name = "ORDER_ID")
     protected String orderId;
@@ -56,6 +52,14 @@ public class Order extends StandardEntity {
     @OnDelete(DeletePolicy.CASCADE)
     @OneToMany(mappedBy = "order")
     protected List<Document> documents;
+
+    public OrderPriority getPriority() {
+        return priority == null ? null : OrderPriority.fromId(priority);
+    }
+
+    public void setPriority(OrderPriority priority) {
+        this.priority = priority == null ? null : priority.getId();
+    }
 
     public void setDocuments(List<Document> documents) {
         this.documents = documents;

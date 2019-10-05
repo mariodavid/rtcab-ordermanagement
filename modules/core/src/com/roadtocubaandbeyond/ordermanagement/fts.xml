@@ -25,5 +25,8 @@
         <entity class="com.roadtocubaandbeyond.ordermanagement.entity.Tenant">
             <include re=".*"/>
         </entity>
+        <entity class="com.roadtocubaandbeyond.ordermanagement.entity.DefaultProduct">
+            <include re=".*"/>
+        </entity>
     </entities>
 </fts-config>

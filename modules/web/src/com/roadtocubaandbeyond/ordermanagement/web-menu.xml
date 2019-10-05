@@ -7,5 +7,6 @@
         <item screen="rtcabo$Order.browse"/>
         <item screen="rtcabo$ProductCategory.browse"/>
         <item screen="rtcabo$Tenant.browse"/>
+        <item screen="rtcabo_DefaultProduct.browse"/>
     </menu>
 </menu-config>

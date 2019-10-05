@@ -18,7 +18,7 @@
           extends="_local"
           name="order-view">
         <property name="customer"
-                  view="_minimal"/>
+                  view="_base"/>
         <property name="lineItems"
                   view="lineItem-view"/>
         <property name="documents"
@@ -35,5 +35,9 @@
           name="product-view">
         <property name="category"
                   view="_minimal"/>
+    </view>
+    <view entity="rtcabo_DefaultProduct" name="defaultProduct-view" extends="_local">
+        <property name="product" view="_minimal"/>
+        <property name="customer" view="_minimal"/>
     </view>
 </views>

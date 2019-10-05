@@ -1,19 +1,14 @@
 package com.roadtocubaandbeyond.ordermanagement.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.util.Date;
-import javax.persistence.Column;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.validation.constraints.NotNull;
-import com.haulmont.cuba.core.entity.StandardEntity;
-import com.haulmont.chile.core.annotations.NamePattern;
 import com.haulmont.chile.core.annotations.Composition;
+import com.haulmont.chile.core.annotations.NamePattern;
 import com.haulmont.cuba.core.entity.annotation.OnDelete;
 import com.haulmont.cuba.core.global.DeletePolicy;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import java.util.Date;
 import java.util.List;
-import javax.persistence.OneToMany;
 
 @NamePattern("%s|name")
 @Table(name = "RTCABO_CUSTOMER")
@@ -24,6 +19,9 @@ public class Customer extends StandardTenantEntity {
     @NotNull
     @Column(name = "NAME", nullable = false)
     protected String name;
+
+    @Column(name = "TYPE_")
+    protected String type;
 
     @Column(name = "FIRST_NAME")
     protected String firstName;
@@ -42,6 +40,14 @@ public class Customer extends StandardTenantEntity {
     @OnDelete(DeletePolicy.CASCADE)
     @OneToMany(mappedBy = "customer")
     protected List<Order> orders;
+
+    public CustomerType getType() {
+        return type == null ? null : CustomerType.fromId(type);
+    }
+
+    public void setType(CustomerType type) {
+        this.type = type == null ? null : type.getId();
+    }
 
     public void setOrders(List<Order> orders) {
         this.orders = orders;

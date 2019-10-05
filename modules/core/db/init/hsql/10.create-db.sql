@@ -11,6 +11,7 @@ create table RTCABO_CUSTOMER (
     TENANT_ID varchar(36) not null,
     --
     NAME varchar(255) not null,
+    TYPE_ varchar(50),
     FIRST_NAME varchar(255),
     BIRTHDAY date not null,
     --
@@ -85,6 +86,7 @@ create table RTCABO_ORDER (
     DELETED_BY varchar(50),
     --
     CUSTOMER_ID varchar(36) not null,
+    PRIORITY varchar(50),
     ORDER_ID varchar(255),
     ORDER_DATE date not null,
     DELIVERY_DATE date not null,
@@ -145,3 +147,21 @@ create table RTCABO_TENANT (
     primary key (ID)
 )^
 -- end RTCABO_TENANT
+-- begin RTCABO_DEFAULT_PRODUCT
+create table RTCABO_DEFAULT_PRODUCT (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    PRODUCT_ID varchar(36),
+    CUSTOMER_ID varchar(36),
+    CUSTOMER_TYPE varchar(50),
+    --
+    primary key (ID)
+)^
+-- end RTCABO_DEFAULT_PRODUCT
