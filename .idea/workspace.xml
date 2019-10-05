@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9949d50-22fe-47d9-b951-1db0b3d4c3b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-screens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-screens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web/order/OrderBrowse.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web/order/OrderBrowse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web/order/OrderWithDefaultsEdit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="136">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -59,8 +58,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-web/7.1.1/8a0008a80b14ac41773e2b773bbc02cc2c6aeec9/cuba-web-7.1.1-sources.jar!/com/haulmont/cuba/web/sys/WebScreens.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="172" column="54" selection-start-line="172" selection-start-column="54" selection-end-line="172" selection-end-column="54" />
+            <state relative-caret-position="215">
+              <caret line="175" column="5" lean-forward="true" selection-start-line="175" selection-start-column="5" selection-end-line="175" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -68,17 +76,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-gui/7.1.1/d05b979d5b7f81be887d3439c64d067cac23c81c/cuba-gui-7.1.1-sources.jar!/com/haulmont/cuba/gui/config/WindowConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="537" column="41" selection-start-line="537" selection-start-column="41" selection-end-line="537" selection-end-column="41" />
+            <state relative-caret-position="39">
+              <caret line="524" selection-start-line="524" selection-end-line="524" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-screens.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="210">
+              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -123,16 +131,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web/order/order-with-defaults-edit.xml">
-          <provider editor-type-id="cuba_designer_properties" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -170,6 +168,7 @@
         <option value="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web/order/order-browse.xml" />
         <option value="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web/order/OrderBrowse.java" />
         <option value="$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-screens.xml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -197,86 +196,6 @@
             <path>
               <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
               <item name="rtcab-ordermanagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rtcab-ordermanagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rtcab-ordermanagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rtcab-ordermanagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rtcab-ordermanagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rtcab-ordermanagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="roadtocubaandbeyond" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rtcab-ordermanagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="roadtocubaandbeyond" type="462c0819:PsiDirectoryNode" />
-              <item name="ordermanagement" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rtcab-ordermanagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="roadtocubaandbeyond" type="462c0819:PsiDirectoryNode" />
-              <item name="ordermanagement" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rtcab-ordermanagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="roadtocubaandbeyond" type="462c0819:PsiDirectoryNode" />
-              <item name="ordermanagement" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="lineitem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rtcab-ordermanagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="roadtocubaandbeyond" type="462c0819:PsiDirectoryNode" />
-              <item name="ordermanagement" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rtcab-ordermanagement" type="b2602c69:ProjectViewProjectNode" />
@@ -507,16 +426,16 @@
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28513733" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28513733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49919224" weight="0.34657535" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49919224" visible="true" weight="0.34657535" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50080776" side_tool="true" weight="0.329927" />
       <window_info anchor="bottom" id="Build" weight="0.329927" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.30821916" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.3068493" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -571,18 +490,6 @@
           <line>286</line>
           <properties />
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-web/7.1.1/8a0008a80b14ac41773e2b773bbc02cc2c6aeec9/cuba-web-7.1.1-sources.jar!/com/haulmont/cuba/web/sys/WebScreens.java</url>
-          <line>178</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-gui/7.1.1/d05b979d5b7f81be887d3439c64d067cac23c81c/cuba-gui-7.1.1-sources.jar!/com/haulmont/cuba/gui/config/WindowConfig.java</url>
-          <line>524</line>
-          <properties />
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -826,23 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web/order/OrderWithDefaultsEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-gui/7.1.1/d05b979d5b7f81be887d3439c64d067cac23c81c/cuba-gui-7.1.1-sources.jar!/com/haulmont/cuba/gui/builders/EditorBuilderProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="286" selection-start-line="286" selection-end-line="286" />
-          <folding>
-            <element signature="e#0#14909#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web/lineitem/line-item-edit.xml">
       <provider editor-type-id="cuba_designer_properties" />
       <provider selected="true" editor-type-id="text-editor">
@@ -875,24 +765,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-web/7.1.1/8a0008a80b14ac41773e2b773bbc02cc2c6aeec9/cuba-web-7.1.1-sources.jar!/com/haulmont/cuba/web/sys/WebScreens.java">
+    <entry file="file://$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-screens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="172" column="54" selection-start-line="172" selection-start-column="54" selection-end-line="172" selection-end-column="54" />
+        <state relative-caret-position="210">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-gui/7.1.1/d05b979d5b7f81be887d3439c64d067cac23c81c/cuba-gui-7.1.1-sources.jar!/com/haulmont/cuba/gui/config/WindowConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="537" column="41" selection-start-line="537" selection-start-column="41" selection-end-line="537" selection-end-column="41" />
+        <state relative-caret-position="39">
+          <caret line="524" selection-start-line="524" selection-end-line="524" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web-screens.xml">
+    <entry file="file://$PROJECT_DIR$/modules/web/src/com/roadtocubaandbeyond/ordermanagement/web/order/OrderWithDefaultsEdit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="136">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-gui/7.1.1/d05b979d5b7f81be887d3439c64d067cac23c81c/cuba-gui-7.1.1-sources.jar!/com/haulmont/cuba/gui/builders/EditorBuilderProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="286" selection-start-line="286" selection-end-line="286" />
+          <folding>
+            <element signature="e#0#14909#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-web/7.1.1/8a0008a80b14ac41773e2b773bbc02cc2c6aeec9/cuba-web-7.1.1-sources.jar!/com/haulmont/cuba/web/sys/WebScreens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="175" column="5" lean-forward="true" selection-start-line="175" selection-start-column="5" selection-end-line="175" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
