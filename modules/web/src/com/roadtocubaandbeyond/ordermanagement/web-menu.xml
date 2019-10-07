@@ -6,7 +6,12 @@
         <item screen="rtcabo$Product.browse"/>
         <item screen="rtcabo$Order.browse"/>
         <item screen="rtcabo$ProductCategory.browse"/>
-        <item screen="rtcabo$Tenant.browse"/>
+
+        <separator />
         <item screen="rtcabo_DefaultProduct.browse"/>
+
+        <separator />
+        <item screen="rtcabo$Tenant.browse"/>
+
     </menu>
 </menu-config>
