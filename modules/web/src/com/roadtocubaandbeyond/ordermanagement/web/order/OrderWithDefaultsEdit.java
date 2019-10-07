@@ -29,12 +29,13 @@ public class OrderWithDefaultsEdit extends StandardEditor<Order> {
         defaultProductsDc.getItems()
                 .stream()
                 .filter(this::isValidDefaultProductInThisContext)
-                .forEach(defaultProduct -> lineItemsDc
-                        .getMutableItems()
-                        .add(
-                                createLineItemFromDefaultProduct(defaultProduct)
-                        )
-                );
+                .forEach(this::addLineItemForDefaultProduct);
+    }
+
+    private void addLineItemForDefaultProduct(DefaultProduct defaultProduct) {
+        lineItemsDc
+                .getMutableItems()
+                .add(createLineItemFromDefaultProduct(defaultProduct));
     }
 
     private boolean isValidDefaultProductInThisContext(DefaultProduct defaultProduct) {
